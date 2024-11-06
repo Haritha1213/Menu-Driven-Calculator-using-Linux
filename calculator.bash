@@ -52,7 +52,11 @@ case $choice in
 		echo "Enter a number (fact)"
 		read a
 		fact = 1
-
+                count = 1
+		while [$count -le $a]; do
+                       $fact = $fact * $count
+		       ((count++))
+	       done
 		echo "$a! = "$fact
 		;;
 	
